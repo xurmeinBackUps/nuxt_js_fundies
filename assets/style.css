@@ -91,3 +91,11 @@ html {
 .links {
   padding-top: 15px;
 }
+
+.auto-margin {
+  margin: auto;
+}
+
+.container > .auto-margin {
+  width: 75vw;
+}
