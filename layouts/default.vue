@@ -20,6 +20,6 @@ export default {
 .application {
   content: contain;
   overscroll-behavior-y: contain;
-  background: limegreen;
+  background: palegreen;
 }
 </style>

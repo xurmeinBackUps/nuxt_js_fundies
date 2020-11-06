@@ -20,10 +20,19 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: `${this.activePost.title}`,
+      meta: [ // is an array for multiple tags of same kind
+      // following merely for demon purpose; inspect page > Elements to confirm meta tag presence
+        { name: 'twitter:title', content: this.activePost.title },
+        { name: 'twitter:description', content: this.activePost.content }
+      ]
+    }
+  },
   data() {
     return {
-      id: this.$route.params.id,
-      // posts: 
+      id: this.$route.params.id
     }
   },
   computed: {

@@ -44,6 +44,15 @@ export default {
   components: {
     NuxtLogo
   },
+  head () { // updates html <head></head> tags; works like component `data()`
+    return {
+      title: 'Home Page',
+      meta: [
+        { name: 'twitter:title', content: 'random words and stuff' },
+        { name: 'twitter:description', content: 'look at this stuff nuxt does!' }
+      ]
+    }
+  },
   computed: {
     posts: function() {
       return this.$store.state.posts.all
