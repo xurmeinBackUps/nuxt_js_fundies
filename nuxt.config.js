@@ -14,8 +14,8 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    // `~` is built-in Nuxt alias for app's root dir
-    '~/assets/style.scss'
+    // `~` is built-in Nuxt alias for app's file structure, can ommit file .ext
+    '~/assets/style'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
